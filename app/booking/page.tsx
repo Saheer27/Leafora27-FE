@@ -91,7 +91,7 @@ export default function Booking() {
                 <Input
                   type="text"
                   placeholder="Enter full name"
-                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-400"
+                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-400 text-black"
                   {...register("fullName", {
                     required: "Full Name is required",
                     minLength: {
@@ -120,7 +120,7 @@ export default function Booking() {
                 <Input
                   type="email"
                   placeholder="Enter email"
-                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-400"
+                  className="text-black border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-400"
                   {...register("email", {
                     required: "Email is required",
                     pattern: {
@@ -141,7 +141,7 @@ export default function Booking() {
                 <Input
                   type="tel"
                   placeholder="Enter mobile number"
-                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-400"
+                  className="text-black border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-400"
                   {...register("contact", {
                     required: "Mobile number is required",
                     pattern: {
@@ -167,7 +167,7 @@ export default function Booking() {
                 <Input
                   type="date"
                   min={getTodaysDate()}
-                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-400"
+                  className="text-black border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-400"
                   {...register("checkInDate", {
                     required: "Check-in date is required",
                     onChange: (e) => {
@@ -195,7 +195,7 @@ export default function Booking() {
                 <Input
                   type="date"
                   min={watchCheckIn || getTodaysDate()}
-                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-400"
+                  className="text-black border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-400"
                   {...register("checkOutDate", {
                     required: "Check-out date is required",
                     validate: (value) =>
