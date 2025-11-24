@@ -7,6 +7,7 @@ export default function Admin() {
   const adminHeaderList = [
     "Name",
     "Email",
+    "Contact",
     "Check-In",
     "Check-Out",
     "Persons",
@@ -78,6 +79,9 @@ export default function Admin() {
                     </td>
                     <td className="py-3 px-4 text-black text-left">
                       {item.email}
+                    </td>
+                    <td className="py-3 px-4 text-black text-left">
+                      {item.contact}
                     </td>
                     <td className="py-3 px-4  text-black text-left">
                       {item.checkInDate?.slice(0, 10)}
