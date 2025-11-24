@@ -102,6 +102,10 @@ export default function Booking() {
                       value: 50,
                       message: "Name cannot exceed 50 characters",
                     },
+                    pattern: {
+                      value: /^[A-Za-z\s]+$/,
+                      message: "Name should not contain numbers or special characters",
+                    },
                   })}
                 />
                 {errors.fullName && (
